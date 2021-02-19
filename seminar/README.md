@@ -8,4 +8,3 @@ _Seminar 자료_
 ## 분야별
 ## Reference
 * https://github.com/JaeYeopHan/Interview_Question_for_Beginner
-#blowest/seminar
