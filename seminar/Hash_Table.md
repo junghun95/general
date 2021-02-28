@@ -1,6 +1,6 @@
 # 🖥 Hash Table
 ## ⚓️Hash Table 이란
-![](Hash_Table/Screen%20Shot%202021-02-28%20at%202.40.14%20PM%204.png)
+![](hash_table/Screen%20Shot%202021-02-28%20at%202.40.14%20PM.png)
 
 *  해시 테이블은 **(Key, Value)쌍으로 데이터를 저장**하는 자료구조중 하나
 * 내부적으로 **배열(Bucket)**을 사용하여 데이터를 저장하기 때문에 빠른 검색속도를 제공
@@ -24,7 +24,7 @@
 만약 위의 그림에서 **John Smith를 해시 함수를 돌려 나온 값과 Lisa Smith를 해시함수를 돌려나온 값이 동일(Collsion or confilct)** 하다면?
 
 ### 🛠 분리 연결법(Separate Chaining)
-![](Hash_Table/Screen%20Shot%202021-02-28%20at%203.46.42%20PM%204.png)
+![](hash_table/Screen%20Shot%202021-02-28%20at%203.46.42%20PM.png)
 
 * 한 버킷당 들어갈 수 있는 엔트리 수의 제한을 두지 않음으로써 모든 자료를 해시 테이블에 담는 것
 * 해당 버킷에 데이터기 이미 있다면 **노드를 추가하여 다음 노드를 가리키는 방식(Linked List)**
@@ -46,11 +46,11 @@
 * 삭제할 경우 충돌(Collision)에 의해 뒤에 저장된 데이터가 검색되지 않을 수 있어 이를 방지하기 위해 삭제한 위치에 **Dummy Node를 삽입**함
 * 개방 주소법에는 4가지 방법이 있음
 	1. 선형 검색(탐사)법 (Linear Probing) -> 충돌 발생시 새로운 *키(Key)*를 저장할 기억공간을 찾기 위해 충돌이 일어난 그 위치에서 선형적으로 검색하여 첫 번째 빈 영역에 저장하는 방법
-![](Hash_Table/Screen%20Shot%202021-02-28%20at%204.47.39%20PM%203.png)
+![](hash_table/Screen%20Shot%202021-02-28%20at%204.47.39%20PM.png)
 	2. 2차 검색(탐사)법 (Quadratic probing) -> 원래 저장할 위치로 부터 1, 4, 9, 16 ... 과 같이 떨어진 영역을 차례대로 검색하여 첫번째 빈영역에 키를 저장하는 방법
-![](Hash_Table/Screen%20Shot%202021-02-28%20at%204.49.53%20PM%203.png)
+![](hash_table/Screen%20Shot%202021-02-28%20at%204.49.53%20PM.png)
 	3. 이중 해싱(Double Hashing) -> 하나의 해시 함수(Hash function)에서 충돌이 발생하면 2차 해시 함수를 이용해 검색 이동거리를 얻는 방법
-![](Hash_Table/Screen%20Shot%202021-02-28%20at%204.52.25%20PM%203.png)
+![](hash_table/Screen%20Shot%202021-02-28%20at%204.52.25%20PM.png)
 	4. 무작위 검색법 -> 충돌을 유발하는 키(Key)를 저장할 수 있는 가용 공간을 찾을 때까지 난수 계산 프로그램을 실행하여 해시 테이블(Hash Table)의 주소 값(Index)를 결정하는 방법
 ## ⚓️ Resizing
 ## ⚙️ Reference
